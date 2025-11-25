@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+    <meta name="description" content="Satluj Public School, BhagoMajra - PSEB affiliated modern educational institution">
+    <meta name="keywords" content="school, education, PSEB, admissions, academics">
+    <meta name="author" content="Satluj Public School">
+    <meta name="theme-color" content="#2563EB">
+    <title>Home - Satluj Public School, BhagoMajra | PSEB Affiliated</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='50' font-size='50' text-anchor='middle' dy='.3em'>🏫</text></svg>">
+</head>
+<body>
+    <!-- Skip to Main Content Link (Accessibility) -->
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <a href="index.html" aria-label="Satluj Public School - Home">
+                    <span class="logo-text">🏫 SATLUJ</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Menu -->
+                <ul class="nav-menu" id="navMenu" role="menubar">
+                <li><a href="#/" aria-current="page">Home</a></li>
+                <li><a href="#/about">About</a></li>
+                <li><a href="#/academics">Academics</a></li>
+                <li><a href="#/admission">Admission</a></li>
+                <li><a href="#/staff">Staff</a></li>
+                <li><a href="#/gallery">Gallery</a></li>
+                <li><a href="#/notices">Notices</a></li>
+                <li><a href="#/contact">Contact</a></li>
+            </ul>
+
+            <!-- Navbar Right Section -->
+            <div class="navbar-right">
+                <!-- Search Bar -->
+                <div class="search-bar" id="searchBar">
+                    <input type="text" placeholder="Search..." aria-label="Search website" id="searchInput">
+                    <button aria-label="Submit search"><span>🔍</span></button>
+                </div>
+
+                <!-- Dark Mode Toggle -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Dark Mode">
+                    <span id="themeIcon">🌙</span>
+                </button>
+
+                <!-- Login Button -->
+                <a href="#/dashboard" class="btn btn-primary btn-sm">
+                    <span>👤 Login</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Satluj Public School</h1>
+                <p class="hero-subtitle">Excellence in Education | PSEB Affiliated</p>
+                <p class="hero-description">Nurturing young minds with modern pedagogy and traditional values</p>
+                <div class="hero-cta">
+                    <a href="admission.html" class="btn btn-primary btn-lg">Apply Now</a>
+                    <a href="#notice-board" class="btn btn-secondary btn-lg">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-background"></div>
+        </section>
+
+        <!-- Quick Stats Section -->
+        <section class="quick-stats" aria-labelledby="stats-title">
+            <h2 id="stats-title" class="sr-only">School Statistics</h2>
+            <div class="stats-container">
+                <div class="stat-card" role="doc-credit">
+                    <div class="stat-number">2024</div>
+                    <div class="stat-label">Year Founded</div>
+                </div>
+                <div class="stat-card" role="doc-credit">
+                    <div class="stat-number">2000+</div>
+                    <div class="stat-label">Students</div>
+                </div>
+                <div class="stat-card" role="doc-credit">
+                    <div class="stat-number">150</div>
+                    <div class="stat-label">Faculty Members</div>
+                </div>
+                <div class="stat-card" role="doc-credit">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Awards & Recognition</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notice Board Section -->
+        <section class="notice-section" aria-labelledby="notice-title">
+            <div class="container">
+                <h2 id="notice-title">📢 Notice Board</h2>
+                <div class="notice-board" id="noticeBoard" role="region" aria-label="Latest announcements">
+                    <div class="notice-carousel">
+                        <div class="notice-item active">
+                            <span class="notice-date">Nov 24, 2024</span>
+                            <span class="notice-text">Admission Form Extended Till December 15, 2024</span>
+                        </div>
+                        <div class="notice-item">
+                            <span class="notice-date">Nov 22, 2024</span>
+                            <span class="notice-text">Diwali Vacation: November 1-5 | School Reopens on November 6</span>
+                        </div>
+                        <div class="notice-item">
+                            <span class="notice-date">Nov 20, 2024</span>
+                            <span class="notice-text">Parent-Teacher Meeting: November 15 @ 3:00 PM in Assembly Hall</span>
+                        </div>
+                        <div class="notice-item">
+                            <span class="notice-date">Nov 18, 2024</span>
+                            <span class="notice-text">Sports Festival Registration Open for All Classes</span>
+                        </div>
+                        <div class="notice-item">
+                            <span class="notice-date">Nov 16, 2024</span>
+                            <span class="notice-text">PSEB Board Exam Schedule Released | Download from Academics</span>
+                        </div>
+                    </div>
+                    <div class="notice-controls">
+                        <button class="notice-btn" id="noticePrev" aria-label="Previous notice">❮</button>
+                        <div class="notice-indicators" role="tablist">
+                            <button role="tab" aria-selected="true" tabindex="0"></button>
+                            <button role="tab" tabindex="-1"></button>
+                            <button role="tab" tabindex="-1"></button>
+                            <button role="tab" tabindex="-1"></button>
+                            <button role="tab" tabindex="-1"></button>
+                        </div>
+                        <button class="notice-btn" id="noticeNext" aria-label="Next notice">❯</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us" aria-labelledby="why-title">
+            <div class="container">
+                <h2 id="why-title">Why Choose Satluj?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>PSEB Aligned</h3>
+                        <p>Complete alignment with Punjab School Education Board curriculum with modern teaching methods</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👨‍🏫</div>
+                        <h3>Expert Faculty</h3>
+                        <p>Highly qualified teachers with years of experience in their respective fields</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏫</div>
+                        <h3>Modern Facilities</h3>
+                        <p>State-of-the-art infrastructure including smart classrooms and digital labs</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✨</div>
+                        <h3>Value Education</h3>
+                        <p>Focus on character building alongside academic excellence and personal growth</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Updates Section -->
+        <section class="latest-updates" aria-labelledby="updates-title">
+            <div class="container">
+                <h2 id="updates-title">Latest Updates</h2>
+                <div class="updates-grid">
+                    <article class="update-card">
+                        <div class="update-image"></div>
+                        <div class="update-content">
+                            <span class="update-date">Nov 20, 2024</span>
+                            <h3>Inter-School Debate Competition</h3>
+                            <p>Our students showcased excellent oratory skills at the regional debate competition, winning silver medal...</p>
+                            <a href="notices.html" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+                    <article class="update-card">
+                        <div class="update-image"></div>
+                        <div class="update-content">
+                            <span class="update-date">Nov 15, 2024</span>
+                            <h3>Science Fair Success</h3>
+                            <p>Outstanding projects from our young scientists demonstrated innovation and scientific thinking...</p>
+                            <a href="notices.html" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+                    <article class="update-card">
+                        <div class="update-image"></div>
+                        <div class="update-content">
+                            <span class="update-date">Nov 10, 2024</span>
+                            <h3>Sports Day Announcement</h3>
+                            <p>Annual sports day scheduled for November 30. All students invited to participate in exciting events...</p>
+                            <a href="notices.html" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-title">Ready to Join Satluj Public School?</h2>
+                    <p>Start your journey to excellence. Apply now for the upcoming academic session.</p>
+                    <div class="cta-buttons">
+                        <a href="admission.html" class="btn btn-primary btn-lg">Start Admission</a>
+                        <a href="contact.html" class="btn btn-secondary btn-lg">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About School</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#"><span>Vision & Mission</span></a></li>
+                    <li><a href="#"><span>Leadership</span></a></li>
+                    <li><a href="#"><span>Achievements</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Academics</h3>
+                <ul>
+                    <li><a href="academics.html">Curriculum</a></li>
+                    <li><a href="academics.html"><span>PSEB Affiliation</span></a></li>
+                    <li><a href="#"><span>Timetable</span></a></li>
+                    <li><a href="#"><span>Results</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="admission.html">Admissions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="notices.html">Notices</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook" title="Facebook">f</a>
+                    <a href="#" aria-label="Twitter" title="Twitter">𝕏</a>
+                    <a href="#" aria-label="Instagram" title="Instagram">📷</a>
+                    <a href="#" aria-label="YouTube" title="YouTube">▶</a>
+                </div>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:info@satlujschool.edu">info@satlujschool.edu</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+919876543210">+91 9876543210</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Satluj Public School, BhagoMajra. PSEB Affiliated. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" style="display: none;">
+        ↑
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>

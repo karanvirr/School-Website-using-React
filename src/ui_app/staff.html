@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+    <meta name="description" content="Staff Directory - Satluj Public School">
+    <meta name="keywords" content="staff, teachers, directory, faculty">
+    <title>Staff Directory - Satluj Public School</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="index.html" aria-label="Satluj Public School - Home">
+                    <span class="logo-text">🏫 SATLUJ</span>
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" id="menuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="staff.html" aria-current="page">Staff</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="notices.html">Notices</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+                <a href="dashboard.html" class="btn btn-primary btn-sm"><span>👤 Login</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Staff Directory</h1>
+                <p class="hero-subtitle">Meet Our Dedicated Faculty</p>
+            </div>
+            <div class="hero-background"></div>
+        </section>
+
+        <!-- Search & Filter -->
+        <section style="padding: var(--space-3xl) var(--space-lg); background-color: var(--bg-primary);">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto; background-color: var(--bg-secondary); padding: var(--space-lg); border-radius: var(--radius-lg); margin-bottom: var(--space-2xl); display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md);">
+                    <input type="text" id="staffSearch" placeholder="Search by name..." style="padding: var(--space-md); border: 1px solid var(--border-color); border-radius: var(--radius-md);">
+                    <select id="departmentFilter" style="padding: var(--space-md); border: 1px solid var(--border-color); border-radius: var(--radius-md);">
+                        <option value="">All Departments</option>
+                        <option value="English">English</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Science">Science</option>
+                        <option value="Social Science">Social Science</option>
+                    </select>
+                </div>
+
+                <!-- Principal Profile -->
+                <h2 style="text-align: center; margin-bottom: var(--space-2xl);">School Leadership</h2>
+                <div style="max-width: 600px; margin: 0 auto; background-color: var(--bg-secondary); padding: var(--space-2xl); border-radius: var(--radius-lg); text-align: center; box-shadow: var(--shadow-md); margin-bottom: var(--space-3xl);">
+                    <div style="width: 120px; height: 120px; background-color: var(--primary-light); border-radius: 50%; margin: 0 auto var(--space-lg); display: flex; align-items: center; justify-content: center; font-size: 48px;">👨‍💼</div>
+                    <h3 style="margin-bottom: var(--space-sm);">Principal Rajesh Verma</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: var(--space-sm);"><strong>B.A., M.Ed.</strong></p>
+                    <p style="color: var(--text-secondary); margin-bottom: var(--space-md);">25+ years in education</p>
+                    <p style="color: var(--text-secondary);"><strong>Email:</strong> <a href="mailto:principal@satlujschool.edu">principal@satlujschool.edu</a></p>
+                </div>
+
+                <!-- Staff Grid -->
+                <h2 style="text-align: center; margin-bottom: var(--space-2xl);">Faculty Members</h2>
+                <div class="staff-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: var(--space-lg); max-width: 1200px; margin: 0 auto;">
+                    <!-- Staff Card 1 -->
+                    <div class="staff-card" data-department="English">
+                        <div style="width: 100%; height: 150px; background-color: var(--primary-light); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 48px; margin-bottom: var(--space-md);">👩‍🏫</div>
+                        <h3 style="margin-bottom: var(--space-sm);">Ms. Gurpreet Kaur</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: var(--space-sm);">English Teacher</p>
+                        <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: var(--space-md);">M.A., B.Ed. | 12 years experience</p>
+                        <p style="color: var(--text-secondary); font-size: 14px;"><strong>Email:</strong> <a href="mailto:gurpreet@satlujschool.edu">gurpreet@satlujschool.edu</a></p>
+                    </div>
+
+                    <!-- Staff Card 2 -->
+                    <div class="staff-card" data-department="Mathematics">
+                        <div style="width: 100%; height: 150px; background-color: var(--success-green); opacity: 0.2; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 48px; margin-bottom: var(--space-md);">👨‍🏫</div>
+                        <h3 style="margin-bottom: var(--space-sm);">Mr. Rajiv Verma</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: var(--space-sm);">Mathematics Teacher</p>
+                        <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: var(--space-md);">B.Sc., B.Ed. | 15 years experience</p>
+                        <p style="color: var(--text-secondary); font-size: 14px;"><strong>Email:</strong> <a href="mailto:rajiv@satlujschool.edu">rajiv@satlujschool.edu</a></p>
+                    </div>
+
+                    <!-- Staff Card 3 -->
+                    <div class="staff-card" data-department="Science">
+                        <div style="width: 100%; height: 150px; background-color: var(--warning-orange); opacity: 0.2; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 48px; margin-bottom: var(--space-md);">👩‍🔬</div>
+                        <h3 style="margin-bottom: var(--space-sm);">Dr. Priya Singh</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: var(--space-sm);">Science Teacher</p>
+                        <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: var(--space-md);">Ph.D., B.Ed. | 10 years experience</p>
+                        <p style="color: var(--text-secondary); font-size: 14px;"><strong>Email:</strong> <a href="mailto:priya@satlujschool.edu">priya@satlujschool.edu</a></p>
+                    </div>
+
+                    <!-- Staff Card 4 -->
+                    <div class="staff-card" data-department="Social Science">
+                        <div style="width: 100%; height: 150px; background-color: var(--info-teal); opacity: 0.2; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 48px; margin-bottom: var(--space-md);">👨‍🏫</div>
+                        <h3 style="margin-bottom: var(--space-sm);">Mr. Amir Khan</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: var(--space-sm);">Social Science Teacher</p>
+                        <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: var(--space-md);">M.A., B.Ed. | 8 years experience</p>
+                        <p style="color: var(--text-secondary); font-size: 14px;"><strong>Email:</strong> <a href="mailto:amir@satlujschool.edu">amir@satlujschool.edu</a></p>
+                    </div>
+
+                    <!-- Staff Card 5 -->
+                    <div class="staff-card" data-department="English">
+                        <div style="width: 100%; height: 150px; background-color: var(--primary-light); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 48px; margin-bottom: var(--space-md);">👩‍🏫</div>
+                        <h3 style="margin-bottom: var(--space-sm);">Ms. Neha Sharma</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: var(--space-sm);">English Teacher</p>
+                        <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: var(--space-md);">M.A., B.Ed. | 7 years experience</p>
+                        <p style="color: var(--text-secondary); font-size: 14px;"><strong>Email:</strong> <a href="mailto:neha@satlujschool.edu">neha@satlujschool.edu</a></p>
+                    </div>
+
+                    <!-- Staff Card 6 -->
+                    <div class="staff-card" data-department="Mathematics">
+                        <div style="width: 100%; height: 150px; background-color: var(--success-green); opacity: 0.2; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 48px; margin-bottom: var(--space-md);">👩‍🏫</div>
+                        <h3 style="margin-bottom: var(--space-sm);">Ms. Anjali Patel</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: var(--space-sm);">Mathematics Teacher</p>
+                        <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: var(--space-md);">B.Sc., B.Ed. | 6 years experience</p>
+                        <p style="color: var(--text-secondary); font-size: 14px;"><strong>Email:</strong> <a href="mailto:anjali@satlujschool.edu">anjali@satlujschool.edu</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-title">Want to Know More About Our Staff?</h2>
+                    <p>Schedule a meeting with our team</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+                        <a href="about.html" class="btn btn-secondary btn-lg">Learn About School</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Staff</h3>
+                <ul>
+                    <li><a href="staff.html">Staff Directory</a></li>
+                    <li><a href="#"><span>Administration</span></a></li>
+                    <li><a href="#"><span>Contact Staff</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:staff@satlujschool.edu">staff@satlujschool.edu</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+919876543210">+91 9876543210</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Satluj Public School, BhagoMajra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+    <script src="js/script.js"></script>
+</body>
+</html>
